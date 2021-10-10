@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+// assets
+import reduxIcon from './assets/redux-favicon.svg';
+
+// test component
+import CardCounter from "./components/CardCounter/CardCounter";
+
+import "./main.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='App'>
+
+            <header className='layout-center'>
+                <img src={reduxIcon} alt='redux icon' />
+                <h1>basic redux testing: "counter example"</h1>
+            </header>
+
+            <main>
+                <section className='layout-center'>
+                    <div className='page--layout-content layout-center'>
+
+                        {/* test component */}
+                        <CardCounter />
+
+                    </div>
+                </section>
+            </main>
+
+            <footer></footer>
+
+        </div>
+    );
 }
 
 export default App;

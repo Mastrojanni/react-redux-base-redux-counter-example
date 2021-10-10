@@ -1,0 +1,100 @@
+@import '../../theme.scss';
+
+.card-counter--container {
+
+    min-width: 100ch;
+    min-height: 5ch;
+
+    padding: 1.2em;
+
+    border: none;
+
+    background: rgba(0,0,0,0.5);
+
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
+
+    .card-counter--content {
+
+        width: 100%;
+
+        padding: 2em;
+
+        background: rgba(0,0,0,0.5);
+
+        border: 1px solid black;
+        
+        flex-direction: column;
+        
+        h2 {
+
+            text-transform: uppercase;
+        }
+
+        p {
+
+            border: none;
+            border-radius: 20px;
+
+            padding: 2em;
+
+            background: brown;
+
+            font-weight: bold;
+            text-transform: uppercase;
+
+            cursor: cell;
+        }
+
+        button {
+
+            margin: 10px 20px;
+            padding: 1em 2em;
+
+            border: none;
+            border-radius: 10px;
+
+            background: rgb(120, 255, 60);
+
+            font-size: 1.2em;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #000;
+
+            cursor: pointer;
+
+            &.button-block {
+
+                width: 4.5em;
+                height: 4.5em;
+
+                padding: 1.5em;
+            }
+
+            &.button-circle {
+
+                border-radius: 100%;
+            }
+
+            &.button-md {
+
+                min-width: 50%;
+                max-width: 100%;
+            }
+
+            &:hover, &:active {
+
+                color: #FFF;
+                background: rgba(60, 255, 80, 0.5);
+                transition: 200ms;
+            }
+
+            &:active {
+
+                transform: translate(0.15em, 0.15em);
+            }
+        }
+    }
+}
