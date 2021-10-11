@@ -1,7 +1,15 @@
-import { createStore } from "redux";
+import { configureStore } from '@reduxjs/toolkit';
 
-// reducers
-import { reducerCounter } from '../reducers/reducer-counter';
+// slice
+import { sliceCounter } from '../slices/slice-counter';
 
 // create store
-export const store = createStore(reducerCounter);
+export const store = configureStore(
+    {
+        reducer: {
+            stateSliceCounter: sliceCounter.reducer,
+        }
+    }
+);
+// export actions
+export const sliceCounterActions = sliceCounter.actions;

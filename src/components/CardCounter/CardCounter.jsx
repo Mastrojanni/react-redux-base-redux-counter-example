@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 // basic redux usage
 import { useSelector, useDispatch } from 'react-redux';
+import { sliceCounterActions } from '../../core/store';
 
 import './CardCounter.scss';
 
@@ -13,28 +14,28 @@ const CardCounter = () => {
     };
     
 
-    /* REDUX */
-    const counter = useSelector( state => state.counter );
+    /* REDUX TOOLKIT */
+    const counter = useSelector( (state) => state.stateSliceCounter.counter );
     const dispatch = useDispatch();
 
     const incrementHandler = () => {
-        dispatch( { type: 'increment' } );
+        dispatch( sliceCounterActions.increment() );
     };
 
     const increaseHandler = () => {
-        dispatch( { type: 'increase', payload: 10 } );
+        dispatch( sliceCounterActions.increase(10) );
     };
 
     const decrementHandler = () => {
-        dispatch( { type: 'decrement' } );
+        dispatch( sliceCounterActions.decrement() );
     };
 
     const subtractHandler = () => {
-        dispatch( { type: 'subtract', payload: 10 } );
+        dispatch( sliceCounterActions.subtract(10) );
     };
 
     const resetHandler = () => {
-        dispatch( { type: 'reset' } );
+        dispatch( sliceCounterActions.reset() );
     };
 
 

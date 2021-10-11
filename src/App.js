@@ -14,7 +14,7 @@ function App() {
 
             <header className='layout-center'>
                 <img src={reduxIcon} alt='redux icon' />
-                <h1>basic redux testing: "counter example"</h1>
+                <h1>redux toolkit testing: "counter example"</h1>
             </header>
 
             <main>
