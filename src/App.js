@@ -13,14 +13,14 @@ function App() {
     return (
         <div className='App'>
 
-            <header className='layout-center'>
+            <header className='layout--center'>
                 <img src={reduxIcon} alt='redux icon' />
                 <h1>redux toolkit testing: "counter example"</h1>
             </header>
 
             <main>
-                <section className='layout-center'>
-                    <div className='page--layout-content layout-center'>
+                <section className='layout--center'>
+                    <div className='page-layout__content layout--center'>
 
                         {/* test component */}
                         <CardCounter />

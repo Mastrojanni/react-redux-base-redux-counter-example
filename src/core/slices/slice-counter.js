@@ -9,6 +9,7 @@ export const sliceCounter = createSlice(
     {
         name: 'counter',
         initialState: sliceCounterInitialState,
+        
         reducers: {
             increment(state) {
                 state.counter++;

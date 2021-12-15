@@ -42,29 +42,29 @@ const CardCounter = () => {
 
 
     return (
-        <div className='card-counter--container layout-center'>
-            <div className='card-counter--content layout-center'>
+        <div className='card-counter__container layout--center'>
+            <div className='card-counter__content layout--center'>
 
                 <h2>counter:</h2>
 
                 <Fragment>
 
-                    <button className='button-md' onClick={setCounterHideHandler}>toggler</button>
+                    <button className='button--md' onClick={setCounterHideHandler}>toggler</button>
 
                     { !counterHide &&
                         <Fragment>
-                            <div className='layout-center layout-inline'>
-                                <button className='button-block button-circle' onClick={decrementHandler}>-</button>
+                            <div className='layout--center layout--row'>
+                                <button className='button--block button--circle' onClick={decrementHandler}>-</button>
 
                                 <p>{`< ${counter} >`}</p>
 
-                                <button className='button-block button-circle' onClick={incrementHandler}>+</button>
+                                <button className='button--block button--circle' onClick={incrementHandler}>+</button>
                             </div>
 
-                            <button className='button-md' onClick={resetHandler}>reset</button>
+                            <button className='button--md' onClick={resetHandler}>reset</button>
 
-                            <button className='button-md' onClick={increaseHandler}>Add 10</button>
-                            <button className='button-md' onClick={subtractHandler}>Sub -10</button>
+                            <button className='button--md' onClick={increaseHandler}>Add 10</button>
+                            <button className='button--md' onClick={subtractHandler}>Sub -10</button>
                         </Fragment>
                     }
 
