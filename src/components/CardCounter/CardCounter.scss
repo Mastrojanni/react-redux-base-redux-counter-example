@@ -1,6 +1,6 @@
 @import '../../theme.scss';
 
-.card-counter--container {
+.card-counter__container {
 
     min-width: 100ch;
     min-height: 5ch;
@@ -15,7 +15,7 @@
     font-size: 20px;
     color: #FFF;
 
-    .card-counter--content {
+    .card-counter__content {
 
         width: 100%;
 
@@ -65,7 +65,7 @@
 
             cursor: pointer;
 
-            &.button-block {
+            &.button--block {
 
                 width: 4.5em;
                 height: 4.5em;
@@ -73,12 +73,12 @@
                 padding: 1.5em;
             }
 
-            &.button-circle {
+            &.button--circle {
 
                 border-radius: 100%;
             }
 
-            &.button-md {
+            &.button--md {
 
                 min-width: 50%;
                 max-width: 100%;
