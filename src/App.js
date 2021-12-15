@@ -8,6 +8,7 @@ import CardCounter from "./components/CardCounter/CardCounter";
 
 import "./main.scss";
 
+
 function App() {
     return (
         <div className='App'>

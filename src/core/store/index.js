@@ -11,5 +11,6 @@ export const store = configureStore(
         }
     }
 );
+
 // export actions
 export const sliceCounterActions = sliceCounter.actions;

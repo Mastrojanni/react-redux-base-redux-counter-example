@@ -5,6 +5,7 @@ import { sliceCounterActions } from '../../core/store';
 
 import './CardCounter.scss';
 
+
 const CardCounter = () => {
     // card state toggler
     const [counterHide, setCounterHide] = useState(false);
@@ -15,6 +16,7 @@ const CardCounter = () => {
     
 
     /* REDUX TOOLKIT */
+    //    localState            =           stateSlice or stateVar (generally Slice)
     const counter = useSelector( (state) => state.stateSliceCounter.counter );
     const dispatch = useDispatch();
 

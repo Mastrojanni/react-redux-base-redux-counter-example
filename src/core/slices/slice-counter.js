@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 // initial state
 const sliceCounterInitialState = { counter: 0 };
 
+
 // slice counter
 export const sliceCounter = createSlice(
     {
